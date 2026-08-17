@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>김태형 · TaeHyung Kim — AI Transformation &amp; Workflow Engineer</title>
 <meta name="description" content="AI Transformation &amp; Workflow Engineer. AI Automation · Internal Tools · Process Design. 모두의 핸드북.">
-<meta name="theme-color" content="#0B0E14">
+<meta name="theme-color" content="#F2F1ED">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%230B0E14'/%3E%3Cpath d='M8 14 C14 10 20 16 26 14 C31 12 35 14 40 12 L40 32 C35 34 31 32 26 34 C20 36 14 30 8 34 Z' fill='%23F2F1ED'/%3E%3Crect x='17' y='17' width='3' height='12' fill='%230B0E14'/%3E%3Crect x='28' y='16' width='3' height='12' fill='%230B0E14'/%3E%3Crect x='20' y='23' width='8' height='3' fill='%230B0E14'/%3E%3C/svg%3E">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="김태형 · TaeHyung Kim">
@@ -14,48 +14,68 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:ital,wght@0,400;0,600&family=IBM+Plex+Sans+KR:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  html, body { margin: 0; background: #0B0E14; }
-  body { font-family: 'IBM Plex Sans KR', sans-serif; -webkit-font-smoothing: antialiased; }
-  a { color: #F2F1ED; text-decoration: none; }
+  :root { --bg: #F2F1ED; --fg: #0B0E14; }
+  html[data-theme="dark"] { --bg: #0B0E14; --fg: #F2F1ED; }
+  html, body { margin: 0; background: var(--bg); }
+  body { font-family: 'IBM Plex Sans KR', sans-serif; -webkit-font-smoothing: antialiased; color: var(--fg); }
+  a { color: var(--fg); text-decoration: none; }
   ::selection { background: #E03A24; color: #F2F1ED; }
-  .row { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: rgba(242,241,237,0.05); border: 1px solid rgba(242,241,237,0.16); min-height: 44px; box-sizing: border-box; transition: background 180ms ease-out, border-color 180ms ease-out; }
-  .row:hover { background: rgba(242,241,237,0.1); border-color: #E03A24; }
-  .save { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px; background: #F2F1ED; cursor: pointer; min-height: 44px; box-sizing: border-box; border: 0; width: 100%; transition: background 180ms ease-out; font-family: inherit; }
+  .fg60 { color: color-mix(in srgb, var(--fg) 60%, transparent); }
+  .fg55 { color: color-mix(in srgb, var(--fg) 55%, transparent); }
+  .fg50 { color: color-mix(in srgb, var(--fg) 50%, transparent); }
+  .fg45 { color: color-mix(in srgb, var(--fg) 45%, transparent); }
+  .fg40 { color: color-mix(in srgb, var(--fg) 40%, transparent); }
+  .hr { border-color: color-mix(in srgb, var(--fg) 20%, transparent) !important; }
+  .row { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: color-mix(in srgb, var(--fg) 5%, transparent); border: 1px solid color-mix(in srgb, var(--fg) 16%, transparent); min-height: 44px; box-sizing: border-box; transition: background 180ms ease-out, border-color 180ms ease-out; }
+  .row:hover { background: color-mix(in srgb, var(--fg) 10%, transparent); border-color: #E03A24; }
+  .save { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px; background: var(--fg); cursor: pointer; min-height: 44px; box-sizing: border-box; border: 0; width: 100%; transition: background 180ms ease-out; font-family: inherit; }
   .save:hover { background: #E03A24; }
   .lbl { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #E03A24; }
-  .val { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #F2F1ED; word-break: break-all; }
+  .val { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: var(--fg); word-break: break-all; }
+  .toggle { cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: color-mix(in srgb, var(--fg) 60%, transparent); border: 1px solid color-mix(in srgb, var(--fg) 25%, transparent); background: none; padding: 6px 10px; transition: color 180ms ease-out, border-color 180ms ease-out; }
+  .toggle:hover { color: #E03A24; border-color: #E03A24; }
 </style>
+<script>
+  (function () {
+    var t = "light";
+    try { t = localStorage.getItem("eh-site-theme") || "light"; } catch (e) {}
+    document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
 </head>
 <body>
 <main style="min-height: 100vh; display: flex; justify-content: center;">
   <div style="width: 100%; max-width: 480px; padding: 40px 28px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px;">
 
-    <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px;">
       <svg width="88" height="52" viewBox="0 0 48 48" aria-label="핸드북">
-        <path d="M5 12 C13 7 21 14 29 11 C35 9 40 11 43 9 L43 33 C40 35 35 33 29 35 C21 38 13 31 5 36 Z" fill="#F2F1ED"></path>
-        <rect x="16" y="16" width="3.4" height="14" fill="#0B0E14"></rect>
-        <rect x="28.6" y="15" width="3.4" height="14" fill="#0B0E14"></rect>
-        <rect x="19.4" y="24" width="9.2" height="3.4" fill="#0B0E14"></rect>
+        <path d="M5 12 C13 7 21 14 29 11 C35 9 40 11 43 9 L43 33 C40 35 35 33 29 35 C21 38 13 31 5 36 Z" style="fill: var(--fg)"></path>
+        <rect x="16" y="16" width="3.4" height="14" style="fill: var(--bg)"></rect>
+        <rect x="28.6" y="15" width="3.4" height="14" style="fill: var(--bg)"></rect>
+        <rect x="19.4" y="24" width="9.2" height="3.4" style="fill: var(--bg)"></rect>
       </svg>
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.26em; color: rgba(242,241,237,0.45);">DIGITAL CARD</div>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div class="fg45" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.26em;">DIGITAL CARD</div>
+        <button class="toggle" id="theme" type="button">DARK</button>
+      </div>
     </div>
 
-    <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid rgba(242,241,237,0.2); padding-bottom: 28px;">
-      <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: #F2F1ED; margin: 0;">TAEHYUNG<br>KIM</h1>
-      <div style="font-size: 17px; font-weight: 500; letter-spacing: 0.02em; color: rgba(242,241,237,0.6);">김태형</div>
-      <div style="font-family: 'Noto Serif KR', serif; font-size: 19px; font-style: italic; line-height: 1.4; color: #F2F1ED; margin-top: 6px;">AI Transformation &amp; Workflow Engineer</div>
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; line-height: 1.6; color: rgba(242,241,237,0.55);">AI Automation · Internal Tools · Process Design</div>
+    <div class="hr" style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid; padding-bottom: 28px;">
+      <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: var(--fg); margin: 0;">TAEHYUNG<br>KIM</h1>
+      <div class="fg60" style="font-size: 17px; font-weight: 500; letter-spacing: 0.02em;">김태형</div>
+      <div style="font-family: 'Noto Serif KR', serif; font-size: 19px; font-style: italic; line-height: 1.4; color: var(--fg); margin-top: 6px;">AI Transformation &amp; Workflow Engineer</div>
+      <div class="fg55" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; line-height: 1.6;">AI Automation · Internal Tools · Process Design</div>
     </div>
 
-    <div style="font-size: 17px; line-height: 1.7; color: #F2F1ED; text-wrap: pretty;">업무를 다시 설계하고, 필요한 도구를 직접 만듭니다.</div>
+    <div style="font-size: 17px; line-height: 1.7; color: var(--fg); text-wrap: pretty;">업무를 다시 설계하고, 필요한 도구를 직접 만듭니다.</div>
 
     <div style="display: flex; flex-direction: column; gap: 10px;">
 
       <a class="row" href="https://www.youtube.com/@everyhandbook" target="_blank" rel="noopener">
         <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1;">
           <div class="lbl">YOUTUBE</div>
-          <div style="font-size: 16px; font-weight: 500; color: #F2F1ED;">모두의 핸드북</div>
-          <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: rgba(242,241,237,0.6); word-break: break-all;">@everyhandbook</div>
+          <div style="font-size: 16px; font-weight: 500; color: var(--fg);">모두의 핸드북</div>
+          <div class="fg60" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; word-break: break-all;">@everyhandbook</div>
         </div>
       </a>
 
@@ -63,16 +83,16 @@
         <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1;">
           <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px;">
             <div class="lbl">MAIL</div>
-            <div id="copyLabel" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: rgba(242,241,237,0.5); flex: none;">복사</div>
+            <div id="copyLabel" class="fg50" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; flex: none;">복사</div>
           </div>
           <div class="val">everyhandbook@gmail.com</div>
         </div>
       </div>
 
-      <a href="https://everyhandbook.github.io" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border: 1px solid rgba(242,241,237,0.2); min-height: 44px; box-sizing: border-box; text-decoration: none;">
+      <a class="hr" href="https://everyhandbook.github.io" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border: 1px solid; min-height: 44px; box-sizing: border-box; text-decoration: none;">
         <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0;">
           <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #E03A24;">SITE</div>
-          <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: #F2F1ED;">everyhandbook.github.io</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--fg);">everyhandbook.github.io</div>
         </div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 18px; color: #E03A24; flex: none;">↗</div>
       </a>
@@ -80,13 +100,13 @@
     </div>
 
     <button class="save" id="save" type="button">
-      <span style="font-size: 16px; font-weight: 600; color: #0B0E14;">연락처 저장</span>
-      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: rgba(11,14,20,0.55);">.VCF</span>
+      <span style="font-size: 16px; font-weight: 600; color: var(--bg);">연락처 저장</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: color-mix(in srgb, var(--bg) 55%, transparent);">.VCF</span>
     </button>
 
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid rgba(242,241,237,0.2); padding-top: 20px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: rgba(242,241,237,0.4);">Currently at Engineering Company</div>
-      <div style="font-size: 13px; font-weight: 500; color: rgba(242,241,237,0.4);">핸드북</div>
+    <div class="hr" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid; padding-top: 20px;">
+      <div class="fg40" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em;">Currently at Engineering Company</div>
+      <div class="fg40" style="font-size: 13px; font-weight: 500;">모두의 핸드북</div>
     </div>
 
   </div>
@@ -97,6 +117,18 @@
   var MAIL = "everyhandbook@gmail.com";
   var label = document.getElementById("copyLabel");
   var t;
+
+  var themeBtn = document.getElementById("theme");
+  function syncBtn() {
+    themeBtn.textContent = document.documentElement.getAttribute("data-theme") === "dark" ? "LIGHT" : "DARK";
+  }
+  syncBtn();
+  themeBtn.addEventListener("click", function () {
+    var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("eh-site-theme", next); } catch (e) {}
+    syncBtn();
+  });
 
   function copied() {
     label.textContent = "복사됨";
