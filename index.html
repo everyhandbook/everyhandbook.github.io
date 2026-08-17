@@ -31,6 +31,13 @@
   a { color: var(--fg); text-decoration: none; }
   a:hover { color: #E03A24; }
   ::selection { background: #E03A24; color: #F2F1ED; }
+  @media (max-width: 720px) {
+    #about, #work, #projects, #youtube, #contact { grid-template-columns: 1fr !important; gap: 24px !important; padding: 56px 0 !important; }
+    #hero { padding: 72px 0 56px !important; }
+    #top { padding: 0 20px !important; }
+    .wordmark { display: none !important; }
+    .navlinks { gap: 14px !important; }
+  }
 </style>
 </helmet>
 
@@ -59,9 +66,9 @@
           <rect x="28.6" y="15" width="3.4" height="14" style="fill: var(--bg)"></rect>
           <rect x="19.4" y="24" width="9.2" height="3.4" style="fill: var(--bg)"></rect>
         </svg>
-        <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.22em; color: color-mix(in srgb, var(--fg) 60%, transparent);">EVERYHANDBOOK</span>
+        <span class="wordmark" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.22em; color: color-mix(in srgb, var(--fg) 60%, transparent);">EVERYHANDBOOK</span>
       </a>
-      <div style="display: flex; gap: 22px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em;">
+      <div class="navlinks" style="display: flex; gap: 22px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em;">
         <a href="#about" style="color: color-mix(in srgb, var(--fg) 60%, transparent);" style-hover="color: #E03A24;">ABOUT</a>
         <a href="#work" style="color: color-mix(in srgb, var(--fg) 60%, transparent);" style-hover="color: #E03A24;">WORK</a>
         <a href="#projects" style="color: color-mix(in srgb, var(--fg) 60%, transparent);" style-hover="color: #E03A24;">PROJECTS</a>
@@ -73,7 +80,7 @@
 
   <div id="top" style="max-width: 1080px; margin: 0 auto; padding: 0 28px; box-sizing: border-box; word-break: keep-all;">
 
-    <div style="padding: 110px 0 90px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: flex; flex-direction: column; gap: 22px;">
+    <div id="hero" style="padding: 110px 0 90px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: flex; flex-direction: column; gap: 22px;">
       <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.26em; color: #E03A24;">AI TRANSFORMATION &amp; WORKFLOW ENGINEER</div>
       <div style="font-family: 'JetBrains Mono', monospace; font-size: clamp(48px, 9vw, 96px); font-weight: 700; line-height: 1.0; letter-spacing: -0.02em;">TAEHYUNG<br>KIM</div>
       <div style="display: flex; align-items: baseline; gap: 16px;">
@@ -237,7 +244,7 @@
       </div>
     </div>
 
-    <div style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
+    <div id="youtube" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
       <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">04 — YOUTUBE</div>
       <div style="min-width: 0;">
         <a href="https://www.youtube.com/@everyhandbook" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 28px; border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); background: color-mix(in srgb, var(--fg) 4%, transparent);" style-hover="border-color: #E03A24;">
