@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김태형 · TaeHyung Kim — AI Transformation &amp; Workflow Engineer</title>
+<meta name="description" content="AI Transformation &amp; Workflow Engineer. AI Automation · Internal Tools · Process Design. 모두의 핸드북.">
+<meta name="theme-color" content="#0B0E14">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="김태형 · TaeHyung Kim">
+<meta property="og:description" content="AI Transformation &amp; Workflow Engineer — 업무를 다시 설계하고, 필요한 도구를 직접 만듭니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:ital,wght@0,400;0,600&family=IBM+Plex+Sans+KR:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: #0B0E14; }
+  body { font-family: 'IBM Plex Sans KR', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #F2F1ED; text-decoration: none; }
+  ::selection { background: #E03A24; color: #F2F1ED; }
+  .row { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: rgba(242,241,237,0.05); border: 1px solid rgba(242,241,237,0.16); min-height: 44px; box-sizing: border-box; transition: background 180ms ease-out, border-color 180ms ease-out; }
+  .row:hover { background: rgba(242,241,237,0.1); border-color: #E03A24; }
+  .save { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px; background: #F2F1ED; cursor: pointer; min-height: 44px; box-sizing: border-box; border: 0; width: 100%; transition: background 180ms ease-out; font-family: inherit; }
+  .save:hover { background: #E03A24; }
+  .lbl { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #E03A24; }
+  .val { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: #F2F1ED; word-break: break-all; }
+</style>
+</head>
+<body>
+<main style="min-height: 100vh; display: flex; justify-content: center;">
+  <div style="width: 100%; max-width: 480px; padding: 40px 28px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+      <svg width="88" height="52" viewBox="0 0 48 48" aria-label="핸드북">
+        <path d="M5 12 C13 7 21 14 29 11 C35 9 40 11 43 9 L43 33 C40 35 35 33 29 35 C21 38 13 31 5 36 Z" fill="#F2F1ED"></path>
+        <rect x="16" y="16" width="3.4" height="14" fill="#0B0E14"></rect>
+        <rect x="28.6" y="15" width="3.4" height="14" fill="#0B0E14"></rect>
+        <rect x="19.4" y="24" width="9.2" height="3.4" fill="#0B0E14"></rect>
+      </svg>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.26em; color: rgba(242,241,237,0.45);">DIGITAL CARD</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid rgba(242,241,237,0.2); padding-bottom: 28px;">
+      <h1 style="font-family: 'JetBrains Mono', monospace; font-size: 40px; font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; color: #F2F1ED; margin: 0;">TAEHYUNG<br>KIM</h1>
+      <div style="font-size: 17px; font-weight: 500; letter-spacing: 0.02em; color: rgba(242,241,237,0.6);">김태형</div>
+      <div style="font-family: 'Noto Serif KR', serif; font-size: 19px; font-style: italic; line-height: 1.4; color: #F2F1ED; margin-top: 6px;">AI Transformation &amp; Workflow Engineer</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; line-height: 1.6; color: rgba(242,241,237,0.55);">AI Automation · Internal Tools · Process Design</div>
+    </div>
+
+    <div style="font-size: 17px; line-height: 1.7; color: #F2F1ED; text-wrap: pretty;">업무를 다시 설계하고, 필요한 도구를 직접 만듭니다.</div>
+
+    <div style="display: flex; flex-direction: column; gap: 10px;">
+
+      <a class="row" href="https://www.youtube.com/@everyhandbook" target="_blank" rel="noopener">
+        <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1;">
+          <div class="lbl">YOUTUBE</div>
+          <div style="font-size: 16px; font-weight: 500; color: #F2F1ED;">모두의 핸드북</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: rgba(242,241,237,0.6); word-break: break-all;">@everyhandbook</div>
+        </div>
+      </a>
+
+      <div class="row" id="mail" role="button" tabindex="0" style="cursor: pointer;">
+        <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0; flex: 1;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px;">
+            <div class="lbl">MAIL</div>
+            <div id="copyLabel" style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: rgba(242,241,237,0.5); flex: none;">복사</div>
+          </div>
+          <div class="val">everyhandbook@gmail.com</div>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border: 1px dashed rgba(242,241,237,0.2); min-height: 44px; box-sizing: border-box;">
+        <div style="display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: rgba(242,241,237,0.35);">SITE</div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 14px; color: rgba(242,241,237,0.35);">준비중</div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="save" id="save" type="button">
+      <span style="font-size: 16px; font-weight: 600; color: #0B0E14;">연락처 저장</span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: rgba(11,14,20,0.55);">.VCF</span>
+    </button>
+
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid rgba(242,241,237,0.2); padding-top: 20px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.04em; color: rgba(242,241,237,0.4);">Currently at Engineering Company</div>
+      <div style="font-size: 13px; font-weight: 500; color: rgba(242,241,237,0.4);">핸드북</div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+(function () {
+  var MAIL = "everyhandbook@gmail.com";
+  var label = document.getElementById("copyLabel");
+  var t;
+
+  function copied() {
+    label.textContent = "복사됨";
+    clearTimeout(t);
+    t = setTimeout(function () { label.textContent = "복사"; }, 1800);
+  }
+
+  function copy() {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(MAIL).then(copied, copied);
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = MAIL;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); } catch (e) {}
+      document.body.removeChild(ta);
+      copied();
+    }
+  }
+
+  var mail = document.getElementById("mail");
+  mail.addEventListener("click", copy);
+  mail.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); copy(); }
+  });
+
+  document.getElementById("save").addEventListener("click", function () {
+    var vcf = [
+      "BEGIN:VCARD",
+      "VERSION:3.0",
+      "N:김태형;;;;",
+      "FN:김태형 (TaeHyung Kim)",
+      "TITLE:AI Transformation & Workflow Engineer",
+      "EMAIL;TYPE=INTERNET:" + MAIL,
+      "URL:https://www.youtube.com/@everyhandbook",
+      "NOTE:AI Automation · Internal Tools · Process Design",
+      "END:VCARD"
+    ].join("\r\n");
+    var blob = new Blob(["\ufeff" + vcf], { type: "text/vcard;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "taehyung-kim.vcf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+})();
+</script>
+</body>
+</html>
