@@ -38,6 +38,7 @@
     .wordmark { display: none !important; }
     .navlinks { gap: 14px !important; }
     .report-flow { grid-template-columns: repeat(2, 1fr) !important; }
+    .report-tiles { grid-template-columns: repeat(2, 1fr) !important; }
   }
   @media (max-width: 480px) {
     .navlinks { gap: 10px !important; font-size: 10px !important; }
@@ -168,9 +169,15 @@
               <div style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid rgba(11,14,20,0.15);">
                 <div style="width: 8px; height: 8px; border-radius: 50%; background: rgba(11,14,20,0.25);"></div>
                 <div style="width: 8px; height: 8px; border-radius: 50%; background: rgba(11,14,20,0.25);"></div>
-                <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: rgba(11,14,20,0.5); margin-left: 8px; white-space: nowrap;">REPORT DRAFT AUTOMATION</div>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: rgba(11,14,20,0.5); margin-left: 8px; white-space: nowrap;">REPORT DRAFT — AI GENERATED</div>
               </div>
-              <div class="report-flow" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(11,14,20,0.15);">
+              <div class="report-tiles" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 16px; background: #E7E5DE; align-items: start;">
+                <img src="assets/report/draft-p1-heading.jpg" alt="보고서 초안 — 장 도입부" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
+                <img src="assets/report/draft-p2-table.jpg" alt="보고서 초안 — 표" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
+                <img src="assets/report/draft-p3-map.jpg" alt="보고서 초안 — 지도 도판" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
+                <img src="assets/report/draft-p4-network.jpg" alt="보고서 초안 — 계획 도판" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
+              </div>
+              <div class="report-flow" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: rgba(11,14,20,0.15); border-top: 1px solid rgba(11,14,20,0.15);">
                 <div style="background: #FFFFFF; padding: 16px 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0;">
                   <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #E03A24;">01</div>
                   <div style="font-size: 15px; font-weight: 600; color: #0B0E14;">접수</div>
@@ -201,11 +208,11 @@
             <div style="display: flex; flex-direction: column; gap: 6px;">
               <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px;">
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E03A24; flex: none;">W1</div>
-                <div style="font-size: 19px; font-weight: 600;">국가유산 정비계획 보고서 초안 자동화</div>
+                <div style="font-size: 19px; font-weight: 600;">보고서 초안 생성 도구</div>
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: color-mix(in srgb, var(--fg) 50%, transparent); border: 1px solid color-mix(in srgb, var(--fg) 25%, transparent); padding: 3px 8px; white-space: nowrap; flex: none;">COMPANY</div>
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: #E03A24; border: 1px solid #E03A24; padding: 3px 8px; white-space: nowrap; flex: none;">MAIN · IN PROGRESS</div>
               </div>
-              <div style="font-size: 15px; line-height: 1.7; color: color-mix(in srgb, var(--fg) 65%, transparent); max-width: 620px; text-wrap: pretty;">지금 가장 많은 시간을 쓰는 일입니다. 과업지시서를 올리면 자료 조사, 장별 초안 작성, 형식·근거 검사, 회사 서식 문서 출력까지 사내 전용 서버에서 이어서 진행됩니다. 본문과 표, 지도·계획 도판을 함께 구성하고, 근거를 찾지 못한 곳은 지어내지 않고 확인이 필요하다고 표시합니다. 사내에서 운영하면서 완납본 수준의 품질을 목표로 고치고 있습니다.</div>
+              <div style="font-size: 15px; line-height: 1.7; color: color-mix(in srgb, var(--fg) 65%, transparent); max-width: 620px; text-wrap: pretty;">지금 가장 많은 시간을 쓰는 일입니다. 위는 AI가 생성한 국가유산 정비계획 보고서 초안입니다. 과업지시서를 올리면 자료 조사, 장별 초안 작성, 형식·근거 검사, 회사 서식 문서 출력까지 사내 전용 서버에서 이어서 진행됩니다. 본문과 표, 지도·계획 도판을 함께 구성하고, 근거를 찾지 못한 곳은 지어내지 않고 확인이 필요하다고 표시합니다. 사내에서 운영하면서 완납본 수준의 품질을 목표로 고치고 있습니다.</div>
             </div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 44px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 14%, transparent);">
@@ -264,7 +271,7 @@
               <a href="https://everyread-demo.web.app" target="_blank" rel="noopener" style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.06em; color: #E03A24; display: inline-flex; align-items: center; gap: 8px;">everyread-demo.web.app ↗</a>
             </div>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 44px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 14%, transparent);">
+          <div style="display: flex; flex-direction: column; gap: 16px; ">
             <div style="border: 1px solid color-mix(in srgb, var(--fg) 25%, transparent); background: #FFFFFF;">
               <div style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid rgba(11,14,20,0.15);">
                 <div style="width: 8px; height: 8px; border-radius: 50%; background: rgba(11,14,20,0.25);"></div>
@@ -281,17 +288,6 @@
               </div>
               <div style="font-size: 15px; line-height: 1.7; color: color-mix(in srgb, var(--fg) 65%, transparent); max-width: 620px; text-wrap: pretty;">재생목록에 영상을 저장하면 자동으로 타임라인별 요약이 생성되어 Notion 데이터베이스에 정리되는 파이프라인. 저장만 하면 몇 분 내 요약이 도착합니다.</div>
             </div>
-          </div>
-          <div style="border: 1px dashed color-mix(in srgb, var(--fg) 30%, transparent); padding: 26px 28px; display: flex; flex-direction: column; gap: 12px;">
-            <div style="display: flex; align-items: center; gap: 12px;">
-              <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: color-mix(in srgb, var(--fg) 50%, transparent); border: 1px solid color-mix(in srgb, var(--fg) 25%, transparent); padding: 4px 10px;">PERSONAL</div>
-              <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: color-mix(in srgb, var(--fg) 40%, transparent); border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); padding: 4px 10px;">UPCOMING</div>
-            </div>
-            <div style="display: flex; align-items: baseline; gap: 14px;">
-              <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E03A24;">W6</div>
-              <div style="font-size: 19px; font-weight: 600;">영어 회화 앱</div>
-            </div>
-            <div style="font-size: 15px; line-height: 1.7; color: color-mix(in srgb, var(--fg) 65%, transparent); max-width: 620px; text-wrap: pretty;">EveryRead에서 이어지는 다음 프로젝트. 읽기에서 말하기로.</div>
           </div>
         </div>
       </div>
