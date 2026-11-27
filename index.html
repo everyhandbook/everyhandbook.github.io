@@ -8,11 +8,11 @@
 <body>
 <x-dc>
 <helmet>
-<title>김태형 · TaeHyung Kim — AI Transformation &amp; Workflow Engineer</title>
-<meta name="description" content="AI Transformation &amp; Workflow Engineer. AI Automation · Internal Tools · Process Design. 모두의 핸드북.">
+<title>김태형 · 모두의 핸드북 — 업무를 다시 설계하고, 필요한 도구를 직접 만듭니다</title>
+<meta name="description" content="반복 업무를 AI로 줄이는 일을 합니다. 업무 흐름 분석부터 자동화, 사내 웹서비스 구현까지. 김태형 · 모두의 핸드북.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="김태형 · TaeHyung Kim">
-<meta property="og:description" content="AI Transformation &amp; Workflow Engineer — 업무를 다시 설계하고, 필요한 도구를 직접 만듭니다.">
+<meta property="og:title" content="김태형 · 모두의 핸드북">
+<meta property="og:description" content="업무를 다시 설계하고, 필요한 도구를 직접 만듭니다. 반복 업무를 AI로 줄이는 의뢰도 받습니다.">
 <meta property="og:url" content="https://everyhandbook.github.io">
 <meta property="og:image" content="https://everyhandbook.github.io/assets/og-card.png">
 <meta property="og:image:width" content="1200">
@@ -32,7 +32,7 @@
   a:hover { color: #E03A24; }
   ::selection { background: #E03A24; color: #F2F1ED; }
   @media (max-width: 720px) {
-    #about, #work, #projects, #youtube, #contact { grid-template-columns: 1fr !important; gap: 24px !important; padding: 56px 0 !important; }
+    #about, #request, #work, #projects, #channels, #contact { grid-template-columns: 1fr !important; gap: 24px !important; padding: 56px 0 !important; }
     #hero { padding: 72px 0 56px !important; }
     #top { padding: 0 20px !important; }
     .wordmark { display: none !important; }
@@ -92,6 +92,7 @@
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; color: color-mix(in srgb, var(--fg) 45%, transparent);">AI Automation · Internal Tools · Process Design</div>
       </div>
       <div style="font-family: 'Noto Serif KR', serif; font-size: clamp(20px, 3vw, 26px); font-style: italic; line-height: 1.55; max-width: 620px; text-wrap: pretty; margin-top: 10px;">업무를 다시 설계하고,<br>필요한 도구를 직접 만듭니다.</div>
+      <a href="#request" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; color: #E03A24; display: inline-flex; align-items: center; gap: 8px; margin-top: 6px;">반복 업무 줄이기 의뢰 받습니다 ↓</a>
     </div>
 
     <div id="about" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
@@ -124,9 +125,37 @@
       </div>
     </div>
 
+    <div id="request" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">02 — REQUEST</div>
+      <div style="display: flex; flex-direction: column; gap: 28px; min-width: 0;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-size: 26px; font-weight: 600; letter-spacing: -0.01em;">반복 업무 줄이기 의뢰</div>
+          <div style="font-size: 16px; line-height: 1.75; color: color-mix(in srgb, var(--fg) 70%, transparent); max-width: 620px; text-wrap: pretty;">회사 일과 별개로, 매일 손으로 반복하는 일 하나를 AI로 줄여 드리는 일을 시범으로 하고 있습니다. 엑셀 정리, 문자 보내기, 보고서 쓰기 같은 일이 잘 맞습니다. 예를 들면 하루 1시간 걸리던 정리를 10분으로 줄이는 일입니다.</div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent);">
+          <div style="outline: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); outline-offset: -0.5px; padding: 22px 20px; display: flex; flex-direction: column; gap: 8px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E03A24;">01</div>
+            <div style="font-size: 16px; font-weight: 600;">먼저 듣습니다</div>
+            <div style="font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">어떤 일을 얼마나 자주, 얼마나 오래 하시는지 듣고 될 만한 일일 때만 시작합니다.</div>
+          </div>
+          <div style="outline: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); outline-offset: -0.5px; padding: 22px 20px; display: flex; flex-direction: column; gap: 8px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E03A24;">02</div>
+            <div style="font-size: 16px; font-weight: 600;">나눠서 받습니다</div>
+            <div style="font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">비용은 한 번에 받지 않고 시작할 때, 해결됐을 때, 그 뒤에도 잘 쓰일 때로 나눠서 받습니다.</div>
+          </div>
+          <div style="outline: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); outline-offset: -0.5px; padding: 22px 20px; display: flex; flex-direction: column; gap: 8px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E03A24;">03</div>
+            <div style="font-size: 16px; font-weight: 600;">2주 뒤 다시 확인합니다</div>
+            <div style="font-size: 14px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">만들어 드리고 끝내지 않고, 실제로 쓰이는지 확인한 뒤 한 번 고쳐 드립니다.</div>
+          </div>
+        </div>
+        <a href="#contact" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.04em; color: #E03A24; display: inline-flex; align-items: center; gap: 8px;">메일로 문의하기 ↓</a>
+      </div>
+    </div>
+
     <sc-if value="{{ showWork }}" hint-placeholder-val="{{ true }}">
     <div id="work" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">02 — WORK</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">03 — WORK</div>
       <div style="display: flex; flex-direction: column; gap: 44px; min-width: 0;">
         <div style="display: flex; flex-direction: column; gap: 14px;">
           <div style="font-size: 26px; font-weight: 600; letter-spacing: -0.01em;">만들고 있는 것</div>
@@ -153,19 +182,6 @@
             </div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 44px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 14%, transparent);">
-            <div style="border: 1px solid color-mix(in srgb, var(--fg) 25%, transparent); background: #FFFFFF;">
-              <div style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-bottom: 1px solid rgba(11,14,20,0.15);">
-                <div style="width: 8px; height: 8px; border-radius: 50%; background: rgba(11,14,20,0.25);"></div>
-                <div style="width: 8px; height: 8px; border-radius: 50%; background: rgba(11,14,20,0.25);"></div>
-                <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: rgba(11,14,20,0.5); margin-left: 8px; white-space: nowrap;">REPORT DRAFT — AI GENERATED</div>
-              </div>
-              <div class="report-tiles" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 16px; background: #E7E5DE;">
-                <img src="assets/report/draft-p1-heading.jpg" alt="보고서 초안 — 장 도입부" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
-                <img src="assets/report/draft-p2-table.jpg" alt="보고서 초안 — 표" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
-                <img src="assets/report/draft-p3-map.jpg" alt="보고서 초안 — 지도 도판" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
-                <img src="assets/report/draft-p4-network.jpg" alt="보고서 초안 — 계획 도판" style="display: block; width: 100%; height: auto; background: #fff; box-shadow: 0 1px 6px rgba(11,14,20,0.15);">
-              </div>
-            </div>
             <div style="display: flex; flex-direction: column; gap: 6px;">
               <div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px;">
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #E03A24; flex: none;">W2</div>
@@ -173,7 +189,7 @@
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: color-mix(in srgb, var(--fg) 50%, transparent); border: 1px solid color-mix(in srgb, var(--fg) 25%, transparent); padding: 3px 8px; white-space: nowrap; flex: none;">COMPANY</div>
                 <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: #E03A24; border: 1px solid #E03A24; padding: 3px 8px; white-space: nowrap; flex: none;">IN PROGRESS</div>
               </div>
-              <div style="font-size: 15px; line-height: 1.7; color: color-mix(in srgb, var(--fg) 65%, transparent); max-width: 620px; text-wrap: pretty;">엔지니어링 보고서 작성 전 과정을 돕는 도구. 위는 AI가 생성한 정비계획 보고서 초안 — 본문·표·지도·계획 도판까지 자동 구성됩니다. 생성 모듈은 한 번에 100페이지 분량 생성, 완납본 기준 품질을 목표로 개선 중입니다.</div>
+              <div style="font-size: 15px; line-height: 1.7; color: color-mix(in srgb, var(--fg) 65%, transparent); max-width: 620px; text-wrap: pretty;">엔지니어링 보고서 작성 전 과정을 돕는 도구. AI가 보고서 초안을 본문·표·지도·계획 도판까지 자동으로 구성합니다. 생성 모듈은 한 번에 100페이지 분량 생성, 완납본 기준 품질을 목표로 개선 중입니다.</div>
             </div>
           </div>
           <div style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 44px; border-bottom: 1px solid color-mix(in srgb, var(--fg) 14%, transparent);">
@@ -230,7 +246,7 @@
     </sc-if>
 
     <div id="projects" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">03 — PROJECTS</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">04 — PROJECTS</div>
       <div style="display: flex; flex-direction: column; gap: 24px; min-width: 0;">
         <div style="font-size: 16px; line-height: 1.75; color: color-mix(in srgb, var(--fg) 70%, transparent); max-width: 620px; text-wrap: pretty;">완료했거나 운영 단계를 마친 프로젝트들. 2024년부터 개인·클라이언트 자동화 24건과 사내 과제 중 일부:</div>
         <div style="display: flex; flex-direction: column; border-top: 1px solid color-mix(in srgb, var(--fg) 20%, transparent);">
@@ -248,14 +264,30 @@
       </div>
     </div>
 
-    <div id="youtube" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">04 — YOUTUBE</div>
-      <div style="min-width: 0;">
-        <a href="https://www.youtube.com/@everyhandbook" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 28px; border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); background: color-mix(in srgb, var(--fg) 4%, transparent);" style-hover="border-color: #E03A24;">
+    <div id="channels" style="padding: 90px 0; border-bottom: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">05 — CHANNELS</div>
+      <div style="display: flex; flex-direction: column; gap: 12px; min-width: 0;">
+        <a href="https://www.threads.com/@everyhandbook" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 28px; border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); background: color-mix(in srgb, var(--fg) 4%, transparent);" style-hover="border-color: #E03A24;">
           <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
-            <div style="font-size: 21px; font-weight: 600;">모두의 핸드북</div>
-            <div style="font-size: 15px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">AI와 자동화를 실무에 적용하는 과정을 기록하고 공유합니다.</div>
-            <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E03A24;">youtube.com/@everyhandbook</div>
+            <div style="font-size: 19px; font-weight: 600;">Threads · 김태형 | 모두의 핸드북</div>
+            <div style="font-size: 15px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">AI로 일하고 읽고 배우는 과정을 거의 매일 짧게 적습니다.</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E03A24; word-break: break-all;">threads.com/@everyhandbook</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #E03A24; flex: none;">↗</div>
+        </a>
+        <a href="https://www.inflearn.com/course/make_apps_script_ai" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 28px; border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); background: color-mix(in srgb, var(--fg) 4%, transparent);" style-hover="border-color: #E03A24;">
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <div style="font-size: 19px; font-weight: 600;">인프런 · 업무자동화, 이 강의 하나로 끝!</div>
+            <div style="font-size: 15px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">Make + Apps Script + AI로 업무를 자동화하는 입문 강의. 46강, 2026년 11월 기준 평점 4.7 · 수강생 60명.</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E03A24; word-break: break-all;">inflearn.com/course/make_apps_script_ai</div>
+          </div>
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #E03A24; flex: none;">↗</div>
+        </a>
+        <a href="https://www.youtube.com/@everyhandbook" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px 28px; border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); background: color-mix(in srgb, var(--fg) 4%, transparent);" style-hover="border-color: #E03A24;">
+          <div style="display: flex; flex-direction: column; gap: 8px; min-width: 0;">
+            <div style="font-size: 19px; font-weight: 600;">YouTube · 모두의 핸드북</div>
+            <div style="font-size: 15px; line-height: 1.65; color: color-mix(in srgb, var(--fg) 60%, transparent); text-wrap: pretty;">자동화 강의 영상으로 시작해, 지금은 쇼츠를 비롯해 이것저것 실험하는 채널입니다.</div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E03A24; word-break: break-all;">youtube.com/@everyhandbook</div>
           </div>
           <div style="font-family: 'JetBrains Mono', monospace; font-size: 20px; color: #E03A24; flex: none;">↗</div>
         </a>
@@ -263,9 +295,9 @@
     </div>
 
     <div id="contact" style="padding: 90px 0 70px; display: grid; grid-template-columns: 180px 1fr; gap: 40px;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">05 — CONTACT</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.2em; color: #E03A24;">06 — CONTACT</div>
       <div style="display: flex; flex-direction: column; gap: 28px; min-width: 0;">
-        <div style="font-family: 'Noto Serif KR', serif; font-size: clamp(20px, 3vw, 26px); font-style: italic; line-height: 1.55; text-wrap: pretty; max-width: 560px;">함께 일하는 방식을 바꾸고 싶다면, 언제든 연락 주세요.</div>
+        <div style="font-family: 'Noto Serif KR', serif; font-size: clamp(20px, 3vw, 26px); font-style: italic; line-height: 1.55; text-wrap: pretty; max-width: 560px;">반복하는 일이 있다면, 어떤 일인지 편하게 적어 보내 주세요.</div>
         <div style="display: flex; flex-wrap: wrap; gap: 12px;">
           <div onClick="{{ copyMail }}" style="display: flex; align-items: center; gap: 14px; padding: 18px 22px; border: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); background: color-mix(in srgb, var(--fg) 4%, transparent); cursor: pointer; min-height: 44px; box-sizing: border-box;" style-hover="border-color: #E03A24;">
             <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #E03A24;">MAIL</div>
@@ -323,8 +355,8 @@ class Component extends DCLogic {
       "FN:김태형 (TaeHyung Kim)",
       "TITLE:AI Transformation & Workflow Engineer",
       "EMAIL;TYPE=INTERNET:everyhandbook@gmail.com",
-      "URL:https://www.youtube.com/@everyhandbook",
-      "NOTE:AI Automation · Internal Tools · Process Design",
+      "URL:https://everyhandbook.github.io/card/",
+      "NOTE:반복 업무를 AI로 줄이는 일 · AI 업무 자동화 · 사내 도구 제작",
       "END:VCARD"
     ].join("\r\n");
     const blob = new Blob([vcf], { type: "text/vcard;charset=utf-8" });
@@ -357,8 +389,8 @@ class Component extends DCLogic {
           desc: "Google Cloud VM에 n8n을 직접 구축하고 커스텀 도메인·HTTPS 적용, 기존 Make 워크플로우 이전." },
         { id: "P009", name: "OCR 영수증 처리 자동화", stack: "Cloud Vision · Make · OpenAI",
           desc: "영수증 형식과 무관하게 데이터를 추출·정리하는 OCR 자동화." },
-        { id: "P012", name: "Apps Script + Make 자동화 강의 (35강)", stack: "교육 콘텐츠",
-          desc: "중급 업무 자동화 유료 강의 제작·운영. Zapier 기초, Make 공개 강의 포함 총 3개 교육 콘텐츠." }
+        { id: "P012", name: "인프런 업무자동화 강의 (Make + Apps Script + AI, 46강)", stack: "교육 콘텐츠",
+          desc: "업무 자동화 유료 강의 제작·운영. 2026년 11월 기준 평점 4.7, 수강생 60명. Zapier 기초, Make 공개 강의 포함 총 3개 교육 콘텐츠." }
       ]
     };
   }
